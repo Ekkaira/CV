@@ -1,0 +1,13 @@
+{
+  "name": "cv",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ats:check": "node scripts/ats-check.mjs",
+    "export:pdf": "node scripts/export-pdf.mjs",
+    "export:ats": "node scripts/export-pdf.mjs && node scripts/ats-check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}
