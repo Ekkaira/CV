@@ -15,6 +15,7 @@ A clean, modern, and responsive CV website built with HTML and CSS, plus ATS exp
 - `index.html` — main CV content
 - `styles.css` — styling, including `@media print` for ATS/PDF
 - `scripts/ats-check.mjs` — ATS compatibility audit
+- `scripts/hr-check.mjs` — HR / recruiter screening criteria (2025–2026)
 - `scripts/export-pdf.mjs` — exports `dist/Denys_Chebotar_Frontend_Developer.pdf`
 
 ## Setup
@@ -35,12 +36,14 @@ Export an ATS-ready PDF and run the audit:
 
 ```bash
 npm run export:ats
+npm run review:cv    # HR + ATS reports together
 ```
 
 Or run steps separately:
 
 ```bash
 npm run export:pdf   # writes dist/Denys_Chebotar_Frontend_Developer.pdf
+npm run hr:check     # HR recruiter criteria
 npm run ats:check    # JSON report + resume-ats-plain.txt
 ```
 

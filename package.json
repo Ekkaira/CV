@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "npx --yes serve . -p 3000",
     "ats:check": "node scripts/ats-check.mjs",
+    "hr:check": "node scripts/hr-check.mjs",
+    "review:cv": "node scripts/hr-check.mjs && node scripts/ats-check.mjs",
     "export:pdf": "node scripts/export-pdf.mjs",
     "export:ats": "node scripts/export-pdf.mjs && node scripts/ats-check.mjs"
   },
